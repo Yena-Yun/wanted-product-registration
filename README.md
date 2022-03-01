@@ -34,22 +34,19 @@ npm run start
 
 ```
 .
-├── App.jsx
 ├── assets
 ├── common      // 공통 스타일 컴포넌트
-│   ├── Switch.js   // 토글 버튼
+│   ├── Switch.js     // 토글 버튼
 │   └── ...
 ├── components		
-│   ├── Category.js   // 카테고리 (+ 태그)
+│   ├── Category.js     // 카테고리 (+ 태그)
 │   └── ...
 ├── pages		  
-│   ├── BasicInfo.js   // 카테고리 포함된 페이지
+│   ├── BasicInfo.js    // 카테고리 포함된 페이지
 │   └── ...
-├── styles
-│   ├── App.css		// css 초기 설정
-│   └── palette.js	// 테마 색 설정
+├── styles   // reset.css 및 테마 설정
 └── utils
-    ├── categoryData.js	
+    ├── categoryData.js	   // 카테고리 텍스트 상수화
     └── ...
 ```
 
