@@ -37,15 +37,14 @@ npm run start
 ├── App.jsx
 ├── assets
 ├── common      // 공통 스타일 컴포넌트
-├── components		// 프로젝트 구성 컴포넌트
-│   ├── Category.js   // 카테고리
+│   ├── Switch.js   // 토글 버튼
 │   └── ...
-├── pages		  // 프로젝트 구성 페이지
-│   ├── BasicInfo.js
-│   ├── ProductImage.js
-│   ├── ProductNoticeInfo.js
-│   ├── ProductOption.js
-│   └── ProductsPeriodSetting.js
+├── components		
+│   ├── Category.js   // 카테고리 (+ 태그)
+│   └── ...
+├── pages		  
+│   ├── BasicInfo.js   // 카테고리 포함된 페이지
+│   └── ...
 ├── styles
 │   ├── App.css		// css 초기 설정
 │   └── palette.js	// 테마 색 설정
