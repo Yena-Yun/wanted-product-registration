@@ -1,7 +1,7 @@
-import React, { useState, useCallback, useRef } from 'react';
-import CATEGORY from 'utils/categoryData';
-import { Grid, Text, Button } from 'common';
-import { bg, border } from 'styles/palette';
+import React, { useState, useCallback, useRef } from "react";
+import CATEGORY from "utils/categoryData";
+import { Grid, Text, Button } from "common";
+import { bg, border } from "styles/palette";
 
 const Category = ({ setCategory }) => {
   const [selectedTag, setSelectedTag] = useState([]);
@@ -10,14 +10,16 @@ const Category = ({ setCategory }) => {
   const onDeleteTag = useCallback(
     (deleteTag, e) => {
       setSelectedTag(selectedTag.filter((tag) => deleteTag !== tag));
-      inputRef.current.querySelectorAll('input').forEach((el) => {
+
+      inputRef.current.querySelectorAll("input").forEach((input) => {
         if (
-          el.value ===
+          input.value ===
           e?.target.innerText.substring(0, e.target.innerText.length - 2)
         ) {
-          el.checked = false;
+          input.checked = false;
         }
       });
+
       setCategory((selectedTag) => [...selectedTag]);
     },
     [selectedTag, setCategory]
@@ -25,13 +27,17 @@ const Category = ({ setCategory }) => {
 
   const checkHandler = useCallback(
     (e) => {
-      if (e.target.checked && !selectedTag.includes(e.target.value)) {
-        setSelectedTag([...selectedTag, e.target.value]);
-      } else if (!e.target.checked && selectedTag.includes(e.target.value)) {
-        const deleteTagId = selectedTag.indexOf(e.target.value);
+      const value = e.target.value;
+      const checked = e.target.checked;
+
+      if (checked && !selectedTag.includes(value)) {
+        setSelectedTag([...selectedTag, value]);
+      } else if (!checked && selectedTag.includes(value)) {
+        const deleteTagId = selectedTag.indexOf(value);
         onDeleteTag(selectedTag[deleteTagId]);
       }
-      setCategory(selectedTag);
+
+      setCategory((selectedTag) => [...selectedTag]);
     },
     [selectedTag, setSelectedTag, onDeleteTag, setCategory]
   );
@@ -49,7 +55,7 @@ const Category = ({ setCategory }) => {
             padding="0.8rem 1.2rem"
             margin="0 1rem 0 0"
             _ref={inputRef}
-            scrollY
+            scrollYW
           >
             {CATEGORY.map((item, idx) => {
               return (
