@@ -1,33 +1,24 @@
 # wanted-product-registration
 
-## 🥽 배포 링크
+## 👛 배포 링크
+## https://trusting-montalcini-7ac111.netlify.app/
 
-<h2><a href='https://trusting-montalcini-7ac111.netlify.app'>https://trusting-montalcini-7ac111.netlify.app/</a></h2>
-
-## 🚩 노션 주소
-
-<h2><a href='https://somber-sunset-e11.notion.site/_-_-b96ebb328d044f718f228de869934e0f'>https://somber-sunset-e11.notion.site/_-_-b96ebb328d044f718f228de869934e0f</a></h2>
+## [velog 과제 후기](https://velog.io/@yena1025/PreOnboarding2-%EC%83%81%ED%92%88-%EB%93%B1%EB%A1%9D-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B3%BC%EC%A0%9C-%ED%9B%84%EA%B8%B0)
 
 ## 🔮 역할 배분
 
 ⚜ 윤예나
 
-- 3번 카테고리 기능 구현
-  - 체크박스 클릭 시 우측에 태그 생성
-  - 태그 클릭 시 해당된 체크박스 해제
-  - 체크박스 클릭 시 우측의 태그 해제
-- common 폴더의 공통 뷰 컴포넌트 작성 (Grid, Button, Input 등)
-- 16~20번 토글 스위치 버튼 구현 (common 폴더의 Switch.js) <br/> 
+- 카테고리와 연동되는 태그 기능 구현
+  - 체크박스 추가 시 연동된 태그 생성
+  - 태그 삭제 시 연동된 체크박스 해제
+  - 체크박스 해제 시 연동된 태그 해제
+- 공통 뷰 컴포넌트 작성 (src/common)
+- 토글 스위치 버튼 (src/common/Switch.js) <br/> 
 
-⚜ 안병진 
-  - 상품 이미지 첨부
-  <br/>
-  
-  ⚜ 박민주  <br/>
-- 상품 정보 고시
-
- ⚜ 이지용<br/>
-- 검색 필터 태그
+⚜ 안병진 - 상품 이미지 첨부 <br/> 
+⚜ 박민주 - 상품 정보 고시 <br/> 
+⚜ 이지용 - 검색 필터 태그 <br/> 
 
 ## 🧶 설치 및 시작하는 법
 
