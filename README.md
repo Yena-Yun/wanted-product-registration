@@ -2,9 +2,9 @@
 
 ## 👛 배포 링크
 ## https://trusting-montalcini-7ac111.netlify.app/
-(주요하게 구현한 카테고리 기능은 2번째 페이지에 - 아래 '다음' 버튼 클릭)
+(2번째 페이지의 카테고리 기능 구현 / 페이지 이동 - 하단의 '다음' 버튼 클릭)
 
-### [velog 카테고리 구현 후기](https://velog.io/@yena1025/PreOnboarding2-%EC%83%81%ED%92%88-%EB%93%B1%EB%A1%9D-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B3%BC%EC%A0%9C-%ED%9B%84%EA%B8%B0)
+### [velog 후기](https://velog.io/@yena1025/PreOnboarding2-%EC%83%81%ED%92%88-%EB%93%B1%EB%A1%9D-%ED%8E%98%EC%9D%B4%EC%A7%80-%EA%B3%BC%EC%A0%9C-%ED%9B%84%EA%B8%B0)
 
 ## 🔮 본인이 맡은 역할
 
